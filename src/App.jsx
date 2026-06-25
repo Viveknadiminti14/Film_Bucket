@@ -1,14 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import MovieDetails from "./pages/MovieDetails";
-import WatchList from "./pages/Watchlist";
+import Watchlist from "./pages/Watchlist";
 import About from "./pages/About";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 
-import Navbar from './components/Navbar';
+import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
