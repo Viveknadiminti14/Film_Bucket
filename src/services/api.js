@@ -32,6 +32,12 @@ export const getPopularMovies = async () => {
   return await res.json();
 };
 
+// fetch tv shows
+export const getPopularTVShows = async () => {
+  const res = await fetch(`${BASE_URL}/tv/popular?api_key=${TMDB_API_KEY}`);
+  if (!res.ok) throw new Error("Failed to fetch popular TV shows");
+  return await res.json();
+};
 // Fetch Upcoming Movies
 export const getUpcomingMovies = async () => {
   const res = await fetch(`${BASE_URL}/movie/upcoming?api_key=${TMDB_API_KEY}`);

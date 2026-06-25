@@ -10,6 +10,7 @@ import {
   getWatchProviders,
   getMovieCredits,
   getSimilarMovies,
+  getPopularTVShows,
 } from "../services/api";
 
 const MovieDetails = () => {
@@ -19,6 +20,7 @@ const MovieDetails = () => {
   const [trailer, setTrailer] = useState(null);
   const [ottPlatforms, setOttPlatforms] = useState([]);
   const [cast, setCast] = useState([]);
+  const [popularTVShows, setPopularTVShows] = useState([]);
   const [similarMovies, setSimilarMovies] = useState([]);
   const [user, setUser] = useState(null);
   const [isAdded, setIsAdded] = useState(false);
@@ -139,6 +141,7 @@ const addToWatchlist = async (movie) => {
   <button
     onClick={() => addToWatchlist(movie)}
     disabled={isAdded}
+    
     className={`px-4 py-2 rounded-lg ${
       isAdded
         ? "bg-gray-600 text-gray-300 cursor-not-allowed"
@@ -146,7 +149,8 @@ const addToWatchlist = async (movie) => {
     }`}
   >
     {isAdded ? "Added to Watchlist ✅" : "Add to Watchlist"}
-  </button>
+</button>
+
 )}
 
       {/* 🎥 Trailer */}

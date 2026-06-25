@@ -17,13 +17,14 @@ const ScrollableRow = ({ title, movies }) => {
             <img
               src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}
               alt={movie.title || movie.name}
-              className="w-full h-auto"
+              className="w-full h-auto"nmkbjkkkk
             />
-            <div className="p-2">
+            <div className="p-2">hdkfmk
               <h3 className="text-sm font-medium text-white">
                 {movie.title || movie.name}
               </h3>
             </div>
+
           </Link>
         ))}
       </div>
